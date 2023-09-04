@@ -21,5 +21,12 @@ namespace R5T.T0199.Extensions
             var output = new EnvironmentVariableValue(value);
             return output;
         }
+
+        /// <inheritdoc cref="ISearchPattern"/>
+        public ISearchPattern ToSearchPattern(string value)
+        {
+            var output = new SearchPattern(value);
+            return output;
+        }
     }
 }

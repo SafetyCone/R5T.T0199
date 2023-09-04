@@ -16,5 +16,11 @@ namespace R5T.T0199.Extensions
         {
             return Instances.StringOperator_Extensions.ToEnvironmentVariableValue(value);
         }
+
+        /// <inheritdoc cref="IStringOperator.ToSearchPattern(string)"/>
+        public static ISearchPattern ToSearchPattern(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToSearchPattern(value);
+        }
     }
 }
